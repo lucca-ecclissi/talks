@@ -1,0 +1,9 @@
+[submodule "minicurso-golang"]
+	path = minicurso-golang
+	url = https://github.com/lucca-ecclissi/minicurso-golang
+[submodule "present-container"]
+	path = present-container
+	url = https://github.com/lucca-ecclissi/present-container
+[submodule "minicurso-docker"]
+	path = minicurso-docker
+	url = https://github.com/lucca-ecclissi/minicurso-docker
