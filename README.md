@@ -27,4 +27,10 @@ Slides and demos from talks I've given.
     <td>Short Course GOLang 
       [<a href="https://github.com/lucca-ecclissi/talks/tree/master/minicurso-golang">minicurso-golang</a>]</td>
   </tr>
+  <tr>
+    <td>Sep 12, 2018</td>
+    <td>FATEC</td>
+    <td>2 Container Presentation 
+      [<a href="https://github.com/lucca-ecclissi/talks/tree/master/present-container-2">present-container-2</a>]</td>
+  </tr>
 </table>
