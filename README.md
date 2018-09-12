@@ -22,7 +22,7 @@ Slides and demos from talks I've given.
       [<a href="https://github.com/lucca-ecclissi/talks/tree/master/present-container">present-container</a>]</td>
   </tr>
   <tr>
-    <td>Mar 21, 2018</td>
+    <td>May 9, 2018</td>
     <td>FATEC</td>
     <td>Short Course GOLang 
       [<a href="https://github.com/lucca-ecclissi/talks/tree/master/minicurso-golang">minicurso-golang</a>]</td>
