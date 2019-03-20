@@ -1,0 +1,130 @@
+Container
+20 Mar 2019
+
+
+Lucca Ecclissi
+Desenvolvedor, Lumminy
+lucca.ecclissi@gmail.com
+https://github.com/luclissi
+@lecclissi
+
+* História dos Containers.
+
+- UNIX 1979 
+    chroot - Basicamente permite criar e utilizar um diretório raiz diferente da máquina real.
+
+- FreeBSD 2000
+    Jails (prisões) - Sistemas independentes e menores
+
+- Solaris 2004
+    Solaris Container - controle de recursos + isolamento de processos
+
+- Google 2006
+    Process Containers (cgroups) - isolar recursos 
+
+- LXC (LinuXContainers) 2008
+    Primeira no gerenciamento de containers 
+
+* História dos Containers.
+
+- CloudFoundry 2011
+    Isolamento de ambiente
+
+- Docker 2013
+    Simplificador de tudo 
+
+* Por que a demora?
+
+- Linux não era muito famoso :(
+
+- Virtualização virou moda 
+
+- Nascimento da Cloud.
+
+- Começam a olhar o LXC com outros olhos.
+
+- Nasce o Docker. S2
+
+* O que é um Container?
+
+- Virtualização a nível de sistema operacional.
+
+.image img/nivel.jpg _ 600
+
+* Container vs Maquina Virtual
+
+.image img/dockerVsvms.png _ 900
+
+
+* O uso dos Containers
+
+- Por que era tão complicado?
+    Pela necessidade de entender sobre processos, isolamento, compartilhamento de recursos e sistemas de arquivos.
+
+- LXC e Docker 
+    O LXC e o Docker são ferramentas responsáveis pela criação e gerenciamento de containers em ambientes linux.
+    Obs: O Docker suporta MacOS e Windows
+
+- Comandos no LXC
+    sudo apt-get install lxc #instala o LXC
+    sudo lxc-create -t ubuntu -n ubuntulxc #Cria um container
+    sudo lxc-ls -f #informações do LXC
+    sudo lxc-start -n ubuntulxc #Inicia um container
+
+- Comandos no Docker
+    curl -fsSL https://get.docker.com/ | sh #instala o Docker
+    docker pull [nome da imagem]; #Baixa a imagem
+    docker images; #Lista todas as imagens baixadas
+    docker run [nome da imagem]; #Inicia um container da imagem que você escolheu.
+
+* LXC vs Docker 
+
+.link https://robinsystems.com/blog/linux-containers-comparison-lxc-docker/ Clique aqui para saber mais
+
+.image img/lxcvsdocker.png _ 600
+
+* Um pouco mais sobre o Docker 
+
+- dotCloud - ferramentas para LXC 
+
+- Open Source - GO - 2013
+
+- Ferramentas 
+    Docker Engine - Ferramenta para Administrar containers.
+    Docker Machine - Ferramenta para provisionar e gerenciar seus hosts Dockerized (hosts com o Docker Engine neles).
+    Docker Swarm - Ferramenta para Clusterização de Serviços/Containers
+    Docker Compose - Ferramenta que define e executa aplicativos do Docker
+    Docker Registry - Docker Hub/ Docker Store
+
+* 
+
+.image img/kubernetes.png _ 500
+
+* 
+
+.image img/ingress.png _ 1000
+
+* Peguntas 
+
+- O que faz o chroot?
+- Quais sistemas já usavam containers?
+- Qual significado da sigla LXC?
+- O que é um Container?
+- Qual a diferença entre Container e Máquina Virtual?
+- Por que era tão complicado?
+- O que é o LXC?
+- Qual a diferença entre LXC e Docker?
+
+
+* Referências
+
+.link https://escotilhalivre.wordpress.com/2015/06/10/virtualizacao-definicao/ Virtualização
+
+.link https://escotilhalivre.wordpress.com/2015/06/22/usando-o-lxc-introducao/ Uso do LXC
+
+.link https://www.concrete.com.br/2015/07/04/como-dockerizar-aplicacao-linux/ História dos Containers
+
+.link https://robinsystems.com/blog/linux-containers-comparison-lxc-docker/ LXC vs Docker
+
+.link https://academy.umbler.com/infografico-historia-dos-containers-ate-agora/ História dos Containers até agora
+        
